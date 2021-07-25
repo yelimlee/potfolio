@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reponsive.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="toggle">
+    <i class="xi-plus-thin"></i>
+  </div>
+  <div class="overlay"></div>
+  <ul class="gnb">
+    <li><a href="#feature1">Home</a></li>
+    <li><a href="#feature2">About</a></li>
+    <li><a href="#feature3">Graphic Portfolio</a></li>
+    <li><a href="#feature4">Web Portfolio</a></li>
+    <li><a href="#feature5">Skills</a></li>
+    <li><a href="#feature6">Epilogue</a></li>
+  </ul>
+
+  <div class="container">
+    <section class="welcome" id="feature1">
+      <video src="images/Record - 65390.mp4" autoplay muted loop poster="images/lj.JPG"></video>
+    </section>
+    <section id="feature2">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section:About</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam, fuga fugit culpa maxime id molestias earum quas consequuntur libero beatae velit qui aliquam iure facere, quos ex! Minima quis quia magnam, recusandae vel ipsa at quos necessitatibus aperiam quidem suscipit harum placeat veritatis doloremque! Repellat eveniet harum voluptas fugit atque inventore tenetur. Pariatur cumque ipsa ipsum fugiat non quis voluptates sequi at, libero inventore minus autem, eos velit cupiditate, veritatis perspiciatis natus odio qui deleniti veniam! Excepturi alias voluptatibus beatae accusamus incidunt commodi architecto minima nobis voluptatum optio harum in maxime est, ipsum nostrum, odio distinctio aspernatur, enim repellendus!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature3">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section:Graphic Portfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam, fuga fugit culpa maxime id molestias earum quas consequuntur libero beatae velit qui aliquam iure facere, quos ex! Minima quis quia magnam, recusandae vel ipsa at quos necessitatibus aperiam quidem suscipit harum placeat veritatis doloremque! Repellat eveniet harum voluptas fugit atque inventore tenetur. Pariatur cumque ipsa ipsum fugiat non quis voluptates sequi at, libero inventore minus autem, eos velit cupiditate, veritatis perspiciatis natus odio qui deleniti veniam! Excepturi alias voluptatibus beatae accusamus incidunt commodi architecto minima nobis voluptatum optio harum in maxime est, ipsum nostrum, odio distinctio aspernatur, enim repellendus!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature4">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section:Web Portfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam, fuga fugit culpa maxime id molestias earum quas consequuntur libero beatae velit qui aliquam iure facere, quos ex! Minima quis quia magnam, recusandae vel ipsa at quos necessitatibus aperiam quidem suscipit harum placeat veritatis doloremque! Repellat eveniet harum voluptas fugit atque inventore tenetur. Pariatur cumque ipsa ipsum fugiat non quis voluptates sequi at, libero inventore minus autem, eos velit cupiditate, veritatis perspiciatis natus odio qui deleniti veniam! Excepturi alias voluptatibus beatae accusamus incidunt commodi architecto minima nobis voluptatum optio harum in maxime est, ipsum nostrum, odio distinctio aspernatur, enim repellendus!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature5">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section:Contact</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam, fuga fugit culpa maxime id molestias earum quas consequuntur libero beatae velit qui aliquam iure facere, quos ex! Minima quis quia magnam, recusandae vel ipsa at quos necessitatibus aperiam quidem suscipit harum placeat veritatis doloremque! Repellat eveniet harum voluptas fugit atque inventore tenetur. Pariatur cumque ipsa ipsum fugiat non quis voluptates sequi at, libero inventore minus autem, eos velit cupiditate, veritatis perspiciatis natus odio qui deleniti veniam! Excepturi alias voluptatibus beatae accusamus incidunt commodi architecto minima nobis voluptatum optio harum in maxime est, ipsum nostrum, odio distinctio aspernatur, enim repellendus!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature6">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet.</b>
+          <h1>Section:Epilogue</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam, fuga fugit culpa maxime id molestias earum quas consequuntur libero beatae velit qui aliquam iure facere, quos ex! Minima quis quia magnam, recusandae vel ipsa at quos necessitatibus aperiam quidem suscipit harum placeat veritatis doloremque! Repellat eveniet harum voluptas fugit atque inventore tenetur. Pariatur cumque ipsa ipsum fugiat non quis voluptates sequi at, libero inventore minus autem, eos velit cupiditate, veritatis perspiciatis natus odio qui deleniti veniam! Excepturi alias voluptatibus beatae accusamus incidunt commodi architecto minima nobis voluptatum optio harum in maxime est, ipsum nostrum, odio distinctio aspernatur, enim repellendus!
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    $('.toggle').click(function(){
+      $('.toggle, .overlay, .gnb').toggleClass('active');
+    })
+    $('.gnb a').click(function(){
+      $('.toggle, .overlay, .gnb').removeClass('active');
+    })
+  </script>
+</body>
+</html>

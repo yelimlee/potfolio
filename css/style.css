@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* z-index 잘보기!!!!!!!!! */
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.6em;
+}
+/* Toggle Trigger */
+.toggle{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+.toggle i{
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+  transition: 0.5s;
+}
+/* Toggle Trigger */
+.toggle.active i{
+  background-color: yellowgreen;
+  transform: rotate(315deg);
+}
+/* Overlay */
+.overlay{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.884);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+.overlay.active{
+  transform: scale(130);
+  opacity: 1;
+}
+/* Common CSS */
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(odd){
+  background-color: #f8f8f8;
+}
+section .inner{
+  width: 1150px;
+  text-align: center;
+}
+/* Section: Welcome */
+section.welcome{
+  height: 100vh;
+  width: 100%; /*안써도 100%지만 object-fit을 사용하기 위해선 수기로 작성해야함*/
+}
+section.welcome video{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.heading h1{
+  font-size: 3em;
+  position: relative;
+  padding-bottom: 40px;
+}
+.heading h1:before{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background-color: crimson;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+.heading p{
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.gnb{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  /* visibility: hidden; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.gnb.active{
+  opacity: 1;
+  pointer-events: all;
+  /* visibility: visible; */
+}
+.gnb a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 3.5em;
+  line-height: 1.6em;
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+  padding-right: 20px;
+}
+.gnb a:after{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 0%;
+  background-color: yellowgreen;
+  left: 0;
+  bottom: 7px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.gnb a:hover:after{
+  width: 100%;
+}
