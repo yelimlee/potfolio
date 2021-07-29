@@ -1,0 +1,213 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+body{
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5em;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+/* ################## Header ###################### */
+
+/* BANNER */
+.banner-outer{
+  position: relative;
+  /*50%씩 주어 반씩 색 나누기*/
+  background: linear-gradient(to right, #00202B 50%, #fff 50%);
+}
+.banner{
+  width: 1450px;
+  margin: auto;
+  /* height: 40px; */
+}
+.banner img{
+  display: block; /*margin이 사라짐*/
+}
+.close-banner{
+  position: absolute;
+  font-size: 26px;
+  color: #aaa;
+  cursor: pointer;
+  right: 10px;
+  top: 5px;
+}
+/* LNB */
+.lnb-outer{
+  background-color: #e2edf8;
+}
+.lnb{
+  width: 1450px;
+  margin: auto;
+  display: flex;  /*좌우 정렬*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.lnb-navi a~a:before{
+  content: '|';
+  font: 12px;
+  color: #bbb;
+  margin-right: 5px;
+  padding-left: 5px;
+}
+.lnb-navi a:hover{
+  color: dodgerblue;
+  text-decoration: underline;
+}
+/* GNB */
+.gnb-outer{
+  background-color: #272c38;
+}
+nav{
+  width: 1450px;
+  margin: auto;
+  position: relative;
+}
+.gnb{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.gnb li:not(.gnb li:last-child){ /*마지막 li빼고 flex 1씩 주기*/
+  flex: 1;
+  position: relative;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+} 
+.gnb li~li:not(.gnb li:last-child){
+  border-left: 1px solid #fff;
+}
+.gnb li:last-child{
+  width: 50px;
+  background-color: #12359d;
+  position: relative;
+  transition: 0.35s;
+}
+.gnb li:first-child{
+  background-color: crimson;
+}
+.gnb li:last-child.active{
+  background-color: #fff;
+}
+.gnb li>a{
+  color: #fff;
+  display: block; /*list범위에도 a태그 접근*/
+  height: 100%;
+}
+.badge{
+  font-style: normal;
+  background-color: crimson;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+.dropdown{
+  position: absolute; 
+  width: 100%; /*position이 absolute면 inline-block이 되기 때문에 width를 100%주기 */
+  /* display: none; */
+  opacity: 0;
+  transition: 0.5s;
+  /* visibility: hidden; dropdown에 hover 했을 때는 가리기 */
+  pointer-events: none;
+}
+.gnb li:hover .dropdown{
+  /* display: block; */
+  opacity: 1;
+  /* visibility: visible; */
+  pointer-events: all;
+}
+.dropdown a {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  padding: 8px;
+}
+.dropdown a:hover{
+  background-color: #eee;
+}
+.dropdown a:last-child{
+  border: none;
+}
+/* Trigger */
+.trigger{
+  width: 25px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.trigger span{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: 0.35s;
+}
+.trigger span:nth-child(1){
+  top: 0%;
+}
+.trigger span:nth-child(2){
+  top:50%
+}
+.trigger span:nth-child(3){
+  top:100%
+}
+.trigger.active span{
+  background-color: #000;
+}
+.trigger.active span:nth-child(1){
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2){
+  opacity: 0;
+}
+.trigger.active span:nth-child(3){
+  top: 50%;
+  transform: rotate(-45deg);
+}
+/* Sitemap */
+.sitemap-outer{
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%; /*바닥을 기준으로 딱 달라붙게 설정*/
+  padding: 30px 15px;
+  display: none;
+}
+.sitemap{
+  display: flex;
+}
+.sitemap div{
+  flex: 1;
+  font-size: 14px;
+  line-height: 2em;
+}
+.sitemap div a{
+  display: block;
+  /* display: list-item; */
+}
+.sitemap div a:hover{
+  text-decoration: underline;
+}
+.sitemap div a:before{
+  content: '- ';
+}
+
+/* ################## Section ##################### */
+section img{
+  width: 100%;
+}
