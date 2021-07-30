@@ -331,4 +331,7 @@ section.welcome video{
   color: #dfab01;
   font-weight: 600;
 }
+.swiper-pagination{
+  top: 520px;
+}
 
