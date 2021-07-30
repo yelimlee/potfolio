@@ -301,15 +301,15 @@ section.welcome video{
   width: 350px;
   height: 500px;
   margin: 20px;
+  transition: 0.4s;
 }
 .port a img{
   width: inherit;
   height: inherit;
   object-fit: cover;
-  transition: 0.4s;
   border: 1px solid #ddd;
 }
-.port a img:hover {
+.port a:hover {
   transform: scale(1.05);
 }
 .port a span{
@@ -317,4 +317,18 @@ section.welcome video{
   margin-top: 10px;
 }
 .pub{
+  position: relative;
 }
+.pub a span{
+  font-family: S-CoreDream-4Regular;
+  position: absolute;
+  width: 382px;
+  height: 100px;
+  background-color:  rgba(0, 0, 0, 0.603);
+  top: -10px;
+  line-height: 100px;
+  font-size: 25px;
+  color: #dfab01;
+  font-weight: 600;
+}
+
