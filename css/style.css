@@ -298,8 +298,8 @@ section.welcome video{
   display: flex;
 }
 .port a{
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 500px;
   margin: 20px;
 }
 .port a img{
@@ -310,7 +310,7 @@ section.welcome video{
   border: 1px solid #ddd;
 }
 .port a img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .port a span{
   display: block;
