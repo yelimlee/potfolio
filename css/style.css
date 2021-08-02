@@ -162,7 +162,7 @@ section.welcome video{
   width: 1000px;
   display: flex;
   gap: 60px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .about img{
   width: 180px;
@@ -183,6 +183,10 @@ section.welcome video{
   font-weight: normal;
   color: #6940a5;
   text-decoration: underline;
+}
+.basic-info{
+  font-size: 12px;
+  line-height: 1.3em;
 }
 .basic-info li{
   list-style: none;
@@ -266,13 +270,15 @@ section.welcome video{
   border: 1px solid #888;
   width: 50%; 
   text-align: left;
+  font-size: 10px;
 }
 .modal-content p{
   line-height: 1.7em;
 }
 .modal-content p span{
-  font-size: 30px;
-  margin-bottom: 50px;
+  font-size: 15px;
+  line-height: 1.7em;
+  text-decoration: underline;
 }
 .close {
   color: #aaa;
@@ -303,6 +309,7 @@ section.welcome video{
   margin: 20px;
   transition: 0.4s;
 }
+
 .port a img{
   width: inherit;
   height: inherit;
@@ -334,4 +341,3 @@ section.welcome video{
 .swiper-pagination{
   top: 520px;
 }
-

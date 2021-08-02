@@ -15,7 +15,7 @@
   position: relative;
   overflow: hidden;
   list-style: none;
-  padding: 0;
+  padding: 20px;
   /* Fix of Webkit flickering */
   z-index: 1;
 }
@@ -398,7 +398,7 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal
   > .swiper-pagination-bullets
   .swiper-pagination-bullet {
-  margin: 0 4px;
+  margin: 50px 4px;
 }
 .swiper-container-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
