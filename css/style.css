@@ -171,7 +171,7 @@ section.welcome video{
   text-align: left;
 }
 .about-more p:first-child{
-  font-size: 25px;
+  font-size: 16px;
 }
 .about-more p:first-child b{
   color: #dfab01;
@@ -185,8 +185,8 @@ section.welcome video{
   text-decoration: underline;
 }
 .basic-info{
-  font-size: 14px;
-  line-height: 1.5em;
+  font-size: 13px;
+  line-height: 1.3em;
 }
 .basic-info li{
   list-style: none;
@@ -199,6 +199,7 @@ section.welcome video{
 }
 .last-ex{
   text-align: right;
+  padding-right: 110px;
 }
 .last-ex em{
   color: #ccc;
